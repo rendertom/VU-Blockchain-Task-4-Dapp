@@ -18,10 +18,18 @@ contract MorkaToken {
   }
 
   function transfer(address _to, uint256 _value) public returns (bool success) {
-    require(balanceOf[msg.sender] >= _value, "Value exceeds the owner balance");
+    require(balanceOf[msg.sender] >= _value, "transferFrom (MORKA): Value exceeds the owner balance");
     balanceOf[msg.sender] -= _value;
     balanceOf[_to] += _value;
     emit Transfer(msg.sender, _to, _value);
+    return true;
+  }
+
+  function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
+    require(balanceOf[_from] >= _value, "transferFrom (MORKA): Value exceeds the owner balance");
+    balanceOf[_from] -= _value;
+    balanceOf[_to] += _value;
+    emit Transfer(_from, _to, _value);
     return true;
   }
 }
