@@ -18,7 +18,7 @@ contract BulveToken {
   }
 
   function transfer(address _to, uint256 _value) public returns (bool success) {
-    require(balanceOf[msg.sender] >= _value, "transferFrom (BULVE): Value exceeds the owner balance");
+    require(balanceOf[msg.sender] >= _value, "transfer (BULVE): Value exceeds the owner balance");
     balanceOf[msg.sender] -= _value;
     balanceOf[_to] += _value;
     emit Transfer(msg.sender, _to, _value);

@@ -18,7 +18,7 @@ contract RidikasToken {
   }
 
   function transfer(address _to, uint256 _value) public returns (bool success) {
-    require(balanceOf[msg.sender] >= _value, "transferFrom (RIDIKAS): Value exceeds the owner balance");
+    require(balanceOf[msg.sender] >= _value, "transfer (RIDIKAS): Value exceeds the owner balance");
     balanceOf[msg.sender] -= _value;
     balanceOf[_to] += _value;
     emit Transfer(msg.sender, _to, _value);
