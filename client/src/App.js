@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import getWeb3 from "./getWeb3";
+import getWeb3 from "./utils/getWeb3";
 
 import BulveToken from "./contracts/BulveToken.json";
 import EurToken from "./contracts/EurToken.json";
@@ -7,7 +7,10 @@ import Farm from "./contracts/Farm.json";
 import MorkaToken from "./contracts/MorkaToken.json";
 import RidikasToken from "./contracts/RidikasToken.json";
 
-import "./App.css";
+import Header from './components/Header';
+import Dialog from './components/Dialog';
+import Footer from './components/Footer';
+import Table from './components/Table';
 
 const App = () => {
   const [account, setAccount] = useState(null);
@@ -94,44 +97,41 @@ const App = () => {
     })
   }
 
+  const onStakeClick = (value, animal) => {
+    value = parseInt(value);
+    if (isNaN(value)) return alert("Value is not a number");
+    if (value <= 0) return alert("Value should be greater than 0");
+
+    animal = animal.toUpperCase();
+
+    stakeTokens(value, animal);
+  };
+
+  const onUnstakeClick = (value, animal) => {
+    animal = animal.toUpperCase();
+    unstakeTokens(animal);
+  };
+
+  const onIssueTokensClick = (animal) => {
+    animal = animal.toUpperCase();
+    issueTokens(animal);
+  }
+
   if (isLoading) {
-    return <h1>loading...</h1>
+    return <div className="main"><h1>loading...</h1></div>
   }
 
   return (
-    <div>
-      <div>
-        <button onClick={() => stakeTokens(10, 'BULVE')}>stake bulve tokens</button>
-        <button onClick={() => stakeTokens(10, 'MORKA')}>stake morka tokens</button>
-        <button onClick={() => stakeTokens(1, 'RIDIKAS')}>stake ridikas tokens</button>
-      </div>
-      <div>
-        <button onClick={() => unstakeTokens('BULVE')}>unstake bulve tokens</button>
-        <button onClick={() => unstakeTokens('MORKA')}>unstake morka tokens</button>
-        <button onClick={() => unstakeTokens('RIDIKAS')}>unstake ridikas tokens</button>
-      </div>
-      <div>
-        <button onClick={() => issueTokens('BULVE')}>issue bulve tokens</button>
-        <button onClick={() => issueTokens('MORKA')}>issue morka tokens</button>
-        <button onClick={() => issueTokens('RIDIKAS')}>issue ridikas tokens</button>
-      </div>
-      <p>User {account}</p>
-      <img alt="" id='avatar' src={'https://avatars.dicebear.com/api/avataaars/' + account + '.svg'} />
-      <p>Eurai: {eur.balance}</p>
-      <div>
-        {
-          [bulve, morka, ridikas].map((item, index) => {
-            return (
-              <p key={index}>
-                {item.name}: staking balance: {farm.balance[item.symbol]} (EUR)
-                rewards: {item.balance}({item.symbol})
-                left: {item.left}
-                totalSupply: {item.totalSupply}
-              </p>
-            )
-          })
-        }
-      </div>
+    <div className="main">
+      <Header account={account} balance={eur.balance} />
+      <Dialog
+        onStakeClick={onStakeClick}
+        onUnstakeClick={onUnstakeClick}
+      />
+      <Table items={[bulve, morka, ridikas]} farmBalance={farm.balance} />
+      <Footer items={[bulve, morka, ridikas]}
+        onIssueTokensClick={onIssueTokensClick}
+      />
     </div>
   )
 }
