@@ -5,7 +5,7 @@ const Footer = ({ items, onIssueTokensClick }) => {
   const styles = {
     row: {
       display: "flex",
-      margin: "100px"
+      margin: "50px"
     }
   }
 
