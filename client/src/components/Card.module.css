@@ -1,0 +1,15 @@
+.card {
+  background-color: white;
+  border-radius: 20px;
+  margin: 0 50px;
+  padding: 20px;
+  position: relative;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -25px;
+  right: -50px;
+}
