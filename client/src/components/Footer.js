@@ -1,16 +1,10 @@
 import React from 'react';
 import Card from './Card';
+import styles from "../styles/Footer.module.css";
 
 const Footer = ({ items, onIssueTokensClick }) => {
-  const styles = {
-    row: {
-      display: "flex",
-      margin: "50px"
-    }
-  }
-
   return (
-    <div style={styles.row}>
+    <div className={styles.row}>
       {items.map((item, index) => {
         return <Card
           key={index}

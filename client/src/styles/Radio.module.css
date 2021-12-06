@@ -1,0 +1,9 @@
+.radioImage {
+  height: 50px;
+  margin: 5px;
+}
+
+.round {
+  border-radius: 100%;
+  border: 5px solid #DE2769;
+}

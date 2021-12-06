@@ -1,0 +1,15 @@
+.header {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  width: 50%;
+}
+
+hr {
+  background-color: white;
+  height: 2px;
+  margin: 20px;
+  width: 100%;
+}

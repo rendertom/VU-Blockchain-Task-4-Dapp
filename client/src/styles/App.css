@@ -48,46 +48,6 @@ small {
   font-size: 12px;
 }
 
-.radioImage {
-  height: 50px;
-  margin: 5px;
-}
-
-.round {
-  border-radius: 100%;
-  border: 5px solid #DE2769;
-}
-
-.radioButton {
-  height: 50px;
-  border-radius: 100%;
-  border-width: 5px;
-  border-color: red;
-  border: 3px solid #555;
-  margin: 5px;
-}
-
-table {
-  margin-top: -20px;
-  color: white;
-  font-size: 24px;
-  border-collapse: collapse;
-  background-color: #671618;
-  border-radius: 10px;
-  z-index: 0;
-  width: 420px;
-}
-
-th,
-td {
-  padding: 10px 20px;
-  text-align: center;
-}
-
-th {
-  padding-top: 30px;
-}
-
 .main {
   padding-top: 20px;
   display: flex;
@@ -120,7 +80,3 @@ th {
   color: #09d3ac;
 }
 */
-
-#avatar {
-  width: 30px;
-}

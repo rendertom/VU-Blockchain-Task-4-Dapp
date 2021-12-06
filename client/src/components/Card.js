@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button.js';
+import styles from '../styles/Card.module.css';
 
-import styles from './Card.module.css';
 const assets = require('../utils/assets.js')
 
 const Card = ({symbol, name, totalSupply, issued, onIssueTokensClick}) => {

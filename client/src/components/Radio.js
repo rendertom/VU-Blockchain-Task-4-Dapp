@@ -1,10 +1,11 @@
 import React from 'react';
-const assets = require('../utils/assets.js')
+import styles from '../styles/Radio.module.css';
+const assets = require('../utils/assets.js');
 
 const Radio = ({activeItem, onClick}) => {
   const images = ['chicken', 'cow', 'goat'];
 
-  const getClassName = (item) => "radioImage " + (activeItem === item ? 'round' : null)
+  const getClassName = (item) => styles.radioImage + ' ' + (activeItem === item && styles.round);
 
   return (
     images.map((item, index) => {

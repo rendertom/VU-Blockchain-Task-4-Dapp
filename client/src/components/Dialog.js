@@ -4,6 +4,8 @@ import Button from './Button';
 import InputText from './InputText';
 import Radio from './Radio';
 
+import styles from "../styles/Dialog.module.css";
+
 const Dialog = ({onStakeClick, onUnstakeClick}) => {
   const [value, setValue] = useState(0);
   const [animal, setAnimal] = useState("chicken");
@@ -20,34 +22,19 @@ const Dialog = ({onStakeClick, onUnstakeClick}) => {
     setAnimal(animal)
   }
 
-  const styles = {
-    background: {
-      backgroundColor: "#FFCA1F",
-      borderRadius: "20px",
-      padding: "30px",
-      zIndex: "10",
-      width: "420px"
-    },
-    row: {
-      display: 'flex',
-      alignItems: 'center',
-    }
-  };
-
   return (
-    <div style={styles.background}>
-      <h2>Stake tokens</h2>
-      <div style={styles.row}>
+    <div className={styles.background}>
+      <p>Stake your € and earn some animals</p>
+      <div className={styles.row}>
         <InputText onChange={setValue} />
         <Radio
           activeItem={animal}
           onClick={onRadioChange}
         />
       </div>
-
-      <div style={styles.row}>
+      <div className={styles.row}>
         <Button title="stake" onClick={_onStakeClick} />
-        <Button title="unstake" onClick={_onUnstakeClick} />
+        <Button title="withdraw" onClick={_onUnstakeClick} />
       </div>
     </div>
   )

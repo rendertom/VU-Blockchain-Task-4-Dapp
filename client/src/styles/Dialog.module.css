@@ -1,0 +1,12 @@
+.background {
+  background-color: #FFCA1F;
+  border-radius: 20px;
+  padding: 30px;
+  width: 420px;
+  z-index: 10;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
