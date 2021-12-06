@@ -1,8 +1,8 @@
 pragma solidity ^0.5.0;
 
-contract BulveToken {
-  string public name = "Bulve Token";
-  string public symbol = "BULVE";
+contract CowToken {
+  string public name = "Cow Token";
+  string public symbol = "COW";
   uint256 public totalSupply = 1000000;
 
   event Transfer(
@@ -18,7 +18,7 @@ contract BulveToken {
   }
 
   function transfer(address _to, uint256 _value) public returns (bool success) {
-    require(balanceOf[msg.sender] >= _value, "transfer (BULVE): Value exceeds the owner balance");
+    require(balanceOf[msg.sender] >= _value, "transfer (COW): Value exceeds the owner balance");
     balanceOf[msg.sender] -= _value;
     balanceOf[_to] += _value;
     emit Transfer(msg.sender, _to, _value);
@@ -26,7 +26,7 @@ contract BulveToken {
   }
 
   function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
-    require(balanceOf[_from] >= _value, "transferFrom (BULVE): Value exceeds the owner balance");
+    require(balanceOf[_from] >= _value, "transferFrom (COW): Value exceeds the owner balance");
     balanceOf[_from] -= _value;
     balanceOf[_to] += _value;
     emit Transfer(_from, _to, _value);

@@ -1,5 +1,5 @@
 {
-  "contractName": "BulveToken",
+  "contractName": "ChickenToken",
   "abi": [
     {
       "inputs": [],
@@ -156,17 +156,17 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/BulveToken.sol\":\"BulveToken\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/BulveToken.sol\":{\"keccak256\":\"0x84d0cb148709683c0252a32ed8360d29d5728c52bbeffcfae7b5e190bf06430e\",\"urls\":[\"bzz-raw://6f80b7457cd5f9272ba7f558797752f4daa0f284f66b68959ed00809bf9d6a9a\",\"dweb:/ipfs/QmWaSBMRwLYc6w6H1x27cCfJJ4RiFW5VRCVU761wfheVoE\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ChickenToken.sol\":\"ChickenToken\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ChickenToken.sol\":{\"keccak256\":\"0x84d0cb148709683c0252a32ed8360d29d5728c52bbeffcfae7b5e190bf06430e\",\"urls\":[\"bzz-raw://6f80b7457cd5f9272ba7f558797752f4daa0f284f66b68959ed00809bf9d6a9a\",\"dweb:/ipfs/QmWaSBMRwLYc6w6H1x27cCfJJ4RiFW5VRCVU761wfheVoE\"]}},\"version\":1}",
   "bytecode": "0x60806040526040518060400160405280600b81526020017f42756c766520546f6b656e0000000000000000000000000000000000000000008152506000908051906020019061004f9291906100fb565b506040518060400160405280600581526020017f42554c56450000000000000000000000000000000000000000000000000000008152506001908051906020019061009b9291906100fb565b50620f42406002553480156100af57600080fd5b50600254600360003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055506101a0565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061013c57805160ff191683800117855561016a565b8280016001018555821561016a579182015b8281111561016957825182559160200191906001019061014e565b5b509050610177919061017b565b5090565b61019d91905b80821115610199576000816000905550600101610181565b5090565b90565b61087f806101af6000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c806306fdde031461006757806318160ddd146100ea57806323b872dd1461010857806370a082311461018e57806395d89b41146101e6578063a9059cbb14610269575b600080fd5b61006f6102cf565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100af578082015181840152602081019050610094565b50505050905090810190601f1680156100dc5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100f261036d565b6040518082815260200191505060405180910390f35b6101746004803603606081101561011e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610373565b604051808215151515815260200191505060405180910390f35b6101d0600480360360208110156101a457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610551565b6040518082815260200191505060405180910390f35b6101ee610569565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561022e578082015181840152602081019050610213565b50505050905090810190601f16801561025b5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6102b56004803603604081101561027f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610607565b604051808215151515815260200191505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103655780601f1061033a57610100808354040283529160200191610365565b820191906000526020600020905b81548152906001019060200180831161034857829003601f168201915b505050505081565b60025481565b600081600360008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054101561040d576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260358152602001806107e56035913960400191505060405180910390fd5b81600360008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254039250508190555081600360008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055507fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef848484604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1600190509392505050565b60036020528060005260406000206000915090505481565b60018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105ff5780601f106105d4576101008083540402835291602001916105ff565b820191906000526020600020905b8154815290600101906020018083116105e257829003601f168201915b505050505081565b600081600360003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410156106a1576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252603181526020018061081a6031913960400191505060405180910390fd5b81600360003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254039250508190555081600360008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055507fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef338484604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1600190509291505056fe7472616e7366657246726f6d202842554c5645293a2056616c7565206578636565647320746865206f776e65722062616c616e63657472616e73666572202842554c5645293a2056616c7565206578636565647320746865206f776e65722062616c616e6365a265627a7a7231582011342bd297dc1d1583ae529a7e70b53f103f946c1f8c157d986be74fcae3cc3a64736f6c63430005100032",
   "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c806306fdde031461006757806318160ddd146100ea57806323b872dd1461010857806370a082311461018e57806395d89b41146101e6578063a9059cbb14610269575b600080fd5b61006f6102cf565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100af578082015181840152602081019050610094565b50505050905090810190601f1680156100dc5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100f261036d565b6040518082815260200191505060405180910390f35b6101746004803603606081101561011e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610373565b604051808215151515815260200191505060405180910390f35b6101d0600480360360208110156101a457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610551565b6040518082815260200191505060405180910390f35b6101ee610569565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561022e578082015181840152602081019050610213565b50505050905090810190601f16801561025b5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6102b56004803603604081101561027f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610607565b604051808215151515815260200191505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103655780601f1061033a57610100808354040283529160200191610365565b820191906000526020600020905b81548152906001019060200180831161034857829003601f168201915b505050505081565b60025481565b600081600360008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054101561040d576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260358152602001806107e56035913960400191505060405180910390fd5b81600360008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254039250508190555081600360008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055507fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef848484604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1600190509392505050565b60036020528060005260406000206000915090505481565b60018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105ff5780601f106105d4576101008083540402835291602001916105ff565b820191906000526020600020905b8154815290600101906020018083116105e257829003601f168201915b505050505081565b600081600360003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410156106a1576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252603181526020018061081a6031913960400191505060405180910390fd5b81600360003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254039250508190555081600360008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055507fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef338484604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1600190509291505056fe7472616e7366657246726f6d202842554c5645293a2056616c7565206578636565647320746865206f776e65722062616c616e63657472616e73666572202842554c5645293a2056616c7565206578636565647320746865206f776e65722062616c616e6365a265627a7a7231582011342bd297dc1d1583ae529a7e70b53f103f946c1f8c157d986be74fcae3cc3a64736f6c63430005100032",
   "sourceMap": "25:968:0:-;;;49:34;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;87:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;150:7;121:36;;290:67;8:9:-1;5:2;;;30:1;27;20:12;5:2;290:67:0;341:11;;317:9;:21;327:10;317:21;;;;;;;;;;;;;;;:35;;;;25:968;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
   "deployedSourceMap": "25:968:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:968:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;49:34;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;49:34:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;121:36;;;:::i;:::-;;;;;;;;;;;;;;;;;;;674:317;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;674:317:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;241:44;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;241:44:0;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;87:30;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;87:30:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;361:309;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;361:309:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;49:34;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;121:36::-;;;;:::o;674:317::-;756:12;804:6;784:9;:16;794:5;784:16;;;;;;;;;;;;;;;;:26;;776:92;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;894:6;874:9;:16;884:5;874:16;;;;;;;;;;;;;;;;:26;;;;;;;;;;;924:6;906:9;:14;916:3;906:14;;;;;;;;;;;;;;;;:24;;;;;;;;;;;941:28;950:5;957:3;962:6;941:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;982:4;975:11;;674:317;;;;;:::o;241:44::-;;;;;;;;;;;;;;;;;:::o;87:30::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;361:309::-;424:12;477:6;452:9;:21;462:10;452:21;;;;;;;;;;;;;;;;:31;;444:93;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;568:6;543:9;:21;553:10;543:21;;;;;;;;;;;;;;;;:31;;;;;;;;;;;598:6;580:9;:14;590:3;580:14;;;;;;;;;;;;;;;;:24;;;;;;;;;;;615:33;624:10;636:3;641:6;615:33;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;661:4;654:11;;361:309;;;;:::o",
-  "source": "pragma solidity ^0.5.0;\n\ncontract BulveToken {\n  string public name = \"Bulve Token\";\n  string public symbol = \"BULVE\";\n  uint256 public totalSupply = 1000000;\n\n  event Transfer(\n    address _from,\n    address _to,\n    uint256 _value\n  );\n\n  mapping(address => uint256) public balanceOf;\n\n  constructor() public {\n    balanceOf[msg.sender] = totalSupply;\n  }\n\n  function transfer(address _to, uint256 _value) public returns (bool success) {\n    require(balanceOf[msg.sender] >= _value, \"transfer (BULVE): Value exceeds the owner balance\");\n    balanceOf[msg.sender] -= _value;\n    balanceOf[_to] += _value;\n    emit Transfer(msg.sender, _to, _value);\n    return true;\n  }\n\n  function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {\n    require(balanceOf[_from] >= _value, \"transferFrom (BULVE): Value exceeds the owner balance\");\n    balanceOf[_from] -= _value;\n    balanceOf[_to] += _value;\n    emit Transfer(_from, _to, _value);\n    return true;\n  }\n}",
-  "sourcePath": "/Users/rendertom/Programming/VU-Blockchain-Task-4-Dapp/contracts/BulveToken.sol",
+  "source": "pragma solidity ^0.5.0;\n\ncontract ChickenToken {\n  string public name = \"Chicken Token\";\n  string public symbol = \"CHICKEN\";\n  uint256 public totalSupply = 1000000;\n\n  event Transfer(\n    address _from,\n    address _to,\n    uint256 _value\n  );\n\n  mapping(address => uint256) public balanceOf;\n\n  constructor() public {\n    balanceOf[msg.sender] = totalSupply;\n  }\n\n  function transfer(address _to, uint256 _value) public returns (bool success) {\n    require(balanceOf[msg.sender] >= _value, \"transfer (CHICKEN): Value exceeds the owner balance\");\n    balanceOf[msg.sender] -= _value;\n    balanceOf[_to] += _value;\n    emit Transfer(msg.sender, _to, _value);\n    return true;\n  }\n\n  function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {\n    require(balanceOf[_from] >= _value, \"transferFrom (CHICKEN): Value exceeds the owner balance\");\n    balanceOf[_from] -= _value;\n    balanceOf[_to] += _value;\n    emit Transfer(_from, _to, _value);\n    return true;\n  }\n}",
+  "sourcePath": "/Users/rendertom/Programming/VU-Blockchain-Task-4-Dapp/contracts/ChickenToken.sol",
   "ast": {
-    "absolutePath": "project:/contracts/BulveToken.sol",
+    "absolutePath": "project:/contracts/ChickenToken.sol",
     "exportedSymbols": {
-      "BulveToken": [
+      "ChickenToken": [
         117
       ]
     },
@@ -194,7 +194,7 @@
         "linearizedBaseContracts": [
           117
         ],
-        "name": "BulveToken",
+        "name": "ChickenToken",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
@@ -234,9 +234,9 @@
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_stringliteral_c6e799e8268a77e738ee4eac56182106b5b362dbd10fb8d2d6fce779e49c4fbb",
-                "typeString": "literal_string \"Bulve Token\""
+                "typeString": "literal_string \"Chicken Token\""
               },
-              "value": "Bulve Token"
+              "value": "Chicken Token"
             },
             "visibility": "public"
           },
@@ -277,9 +277,9 @@
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_stringliteral_32a143d1478f77cb7a90219eaeac3f725c89e63f79d3fcb87a63ec1db0cbb977",
-                "typeString": "literal_string \"BULVE\""
+                "typeString": "literal_string \"CHICKEN\""
               },
-              "value": "BULVE"
+              "value": "CHICKEN"
             },
             "visibility": "public"
           },
@@ -703,9 +703,9 @@
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_a353da5ec598052af0cc4439cdf3b3d2f628df5a82b8ef6eedc2471bfb2640e2",
-                          "typeString": "literal_string \"transfer (BULVE): Value exceeds the owner balance\""
+                          "typeString": "literal_string \"transfer (CHICKEN): Value exceeds the owner balance\""
                         },
-                        "value": "transfer (BULVE): Value exceeds the owner balance"
+                        "value": "transfer (CHICKEN): Value exceeds the owner balance"
                       }
                     ],
                     "expression": {
@@ -716,7 +716,7 @@
                         },
                         {
                           "typeIdentifier": "t_stringliteral_a353da5ec598052af0cc4439cdf3b3d2f628df5a82b8ef6eedc2471bfb2640e2",
-                          "typeString": "literal_string \"transfer (BULVE): Value exceeds the owner balance\""
+                          "typeString": "literal_string \"transfer (CHICKEN): Value exceeds the owner balance\""
                         }
                       ],
                       "id": 42,
@@ -1245,9 +1245,9 @@
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_4ba5b8cbe828b28745c4d9c9fa0b92cde07bf0c55f81be3890f99e81ab3459d7",
-                          "typeString": "literal_string \"transferFrom (BULVE): Value exceeds the owner balance\""
+                          "typeString": "literal_string \"transferFrom (CHICKEN): Value exceeds the owner balance\""
                         },
-                        "value": "transferFrom (BULVE): Value exceeds the owner balance"
+                        "value": "transferFrom (CHICKEN): Value exceeds the owner balance"
                       }
                     ],
                     "expression": {
@@ -1258,7 +1258,7 @@
                         },
                         {
                           "typeIdentifier": "t_stringliteral_4ba5b8cbe828b28745c4d9c9fa0b92cde07bf0c55f81be3890f99e81ab3459d7",
-                          "typeString": "literal_string \"transferFrom (BULVE): Value exceeds the owner balance\""
+                          "typeString": "literal_string \"transferFrom (CHICKEN): Value exceeds the owner balance\""
                         }
                       ],
                       "id": 86,
@@ -1695,9 +1695,9 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "project:/contracts/BulveToken.sol",
+      "absolutePath": "project:/contracts/ChickenToken.sol",
       "exportedSymbols": {
-        "BulveToken": [
+        "ChickenToken": [
           117
         ]
       }
@@ -1730,7 +1730,7 @@
           "linearizedBaseContracts": [
             117
           ],
-          "name": "BulveToken",
+          "name": "ChickenToken",
           "scope": 118
         },
         "children": [
@@ -1764,8 +1764,8 @@
                   "lValueRequested": false,
                   "subdenomination": null,
                   "token": "string",
-                  "type": "literal_string \"Bulve Token\"",
-                  "value": "Bulve Token"
+                  "type": "literal_string \"Chicken Token\"",
+                  "value": "Chicken Token"
                 },
                 "id": 3,
                 "name": "Literal",
@@ -1806,8 +1806,8 @@
                   "lValueRequested": false,
                   "subdenomination": null,
                   "token": "string",
-                  "type": "literal_string \"BULVE\"",
-                  "value": "BULVE"
+                  "type": "literal_string \"CHICKEN\"",
+                  "value": "CHICKEN"
                 },
                 "id": 6,
                 "name": "Literal",
@@ -2291,7 +2291,7 @@
                                 },
                                 {
                                   "typeIdentifier": "t_stringliteral_a353da5ec598052af0cc4439cdf3b3d2f628df5a82b8ef6eedc2471bfb2640e2",
-                                  "typeString": "literal_string \"transfer (BULVE): Value exceeds the owner balance\""
+                                  "typeString": "literal_string \"transfer (CHICKEN): Value exceeds the owner balance\""
                                 }
                               ],
                               "overloadedDeclarations": [
@@ -2410,8 +2410,8 @@
                               "lValueRequested": false,
                               "subdenomination": null,
                               "token": "string",
-                              "type": "literal_string \"transfer (BULVE): Value exceeds the owner balance\"",
-                              "value": "transfer (BULVE): Value exceeds the owner balance"
+                              "type": "literal_string \"transfer (CHICKEN): Value exceeds the owner balance\"",
+                              "value": "transfer (CHICKEN): Value exceeds the owner balance"
                             },
                             "id": 49,
                             "name": "Literal",
@@ -2918,7 +2918,7 @@
                                 },
                                 {
                                   "typeIdentifier": "t_stringliteral_4ba5b8cbe828b28745c4d9c9fa0b92cde07bf0c55f81be3890f99e81ab3459d7",
-                                  "typeString": "literal_string \"transferFrom (BULVE): Value exceeds the owner balance\""
+                                  "typeString": "literal_string \"transferFrom (CHICKEN): Value exceeds the owner balance\""
                                 }
                               ],
                               "overloadedDeclarations": [
@@ -3020,8 +3020,8 @@
                               "lValueRequested": false,
                               "subdenomination": null,
                               "token": "string",
-                              "type": "literal_string \"transferFrom (BULVE): Value exceeds the owner balance\"",
-                              "value": "transferFrom (BULVE): Value exceeds the owner balance"
+                              "type": "literal_string \"transferFrom (CHICKEN): Value exceeds the owner balance\"",
+                              "value": "transferFrom (CHICKEN): Value exceeds the owner balance"
                             },
                             "id": 92,
                             "name": "Literal",

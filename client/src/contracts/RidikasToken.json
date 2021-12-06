@@ -1,5 +1,5 @@
 {
-  "contractName": "RidikasToken",
+  "contractName": "GoatToken",
   "abi": [
     {
       "inputs": [],
@@ -156,17 +156,17 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/RidikasToken.sol\":\"RidikasToken\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/RidikasToken.sol\":{\"keccak256\":\"0xf35dadb545fed0208924859e897889382328030ee37898b9c39088a45fcbbf94\",\"urls\":[\"bzz-raw://b13411e85f9309907cf6370f9b218ae25cc6ae7ce504d7c09b4932147337b05c\",\"dweb:/ipfs/QmUs2v7tfQcjN3t2w8Hsb4VAsuu2xAkM5SGQNMdqXXJ3u2\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/GoatToken.sol\":\"GoatToken\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/GoatToken.sol\":{\"keccak256\":\"0xf35dadb545fed0208924859e897889382328030ee37898b9c39088a45fcbbf94\",\"urls\":[\"bzz-raw://b13411e85f9309907cf6370f9b218ae25cc6ae7ce504d7c09b4932147337b05c\",\"dweb:/ipfs/QmUs2v7tfQcjN3t2w8Hsb4VAsuu2xAkM5SGQNMdqXXJ3u2\"]}},\"version\":1}",
   "bytecode": "0x60806040526040518060400160405280600d81526020017f526964696b617320546f6b656e000000000000000000000000000000000000008152506000908051906020019061004f9291906100fb565b506040518060400160405280600781526020017f524944494b4153000000000000000000000000000000000000000000000000008152506001908051906020019061009b9291906100fb565b50620f42406002553480156100af57600080fd5b50600254600360003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055506101a0565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061013c57805160ff191683800117855561016a565b8280016001018555821561016a579182015b8281111561016957825182559160200191906001019061014e565b5b509050610177919061017b565b5090565b61019d91905b80821115610199576000816000905550600101610181565b5090565b90565b610883806101af6000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c806306fdde031461006757806318160ddd146100ea57806323b872dd1461010857806370a082311461018e57806395d89b41146101e6578063a9059cbb14610269575b600080fd5b61006f6102cf565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100af578082015181840152602081019050610094565b50505050905090810190601f1680156100dc5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100f261036d565b6040518082815260200191505060405180910390f35b6101746004803603606081101561011e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610373565b604051808215151515815260200191505060405180910390f35b6101d0600480360360208110156101a457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610551565b6040518082815260200191505060405180910390f35b6101ee610569565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561022e578082015181840152602081019050610213565b50505050905090810190601f16801561025b5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6102b56004803603604081101561027f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610607565b604051808215151515815260200191505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103655780601f1061033a57610100808354040283529160200191610365565b820191906000526020600020905b81548152906001019060200180831161034857829003601f168201915b505050505081565b60025481565b600081600360008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054101561040d576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260378152602001806107e56037913960400191505060405180910390fd5b81600360008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254039250508190555081600360008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055507fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef848484604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1600190509392505050565b60036020528060005260406000206000915090505481565b60018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105ff5780601f106105d4576101008083540402835291602001916105ff565b820191906000526020600020905b8154815290600101906020018083116105e257829003601f168201915b505050505081565b600081600360003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410156106a1576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252603381526020018061081c6033913960400191505060405180910390fd5b81600360003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254039250508190555081600360008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055507fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef338484604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1600190509291505056fe7472616e7366657246726f6d2028524944494b4153293a2056616c7565206578636565647320746865206f776e65722062616c616e63657472616e736665722028524944494b4153293a2056616c7565206578636565647320746865206f776e65722062616c616e6365a265627a7a72315820de8d655606eaef9c25322ac1cad72f66e1a6b718f6ded542c5d599da8d40b1c464736f6c63430005100032",
   "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c806306fdde031461006757806318160ddd146100ea57806323b872dd1461010857806370a082311461018e57806395d89b41146101e6578063a9059cbb14610269575b600080fd5b61006f6102cf565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100af578082015181840152602081019050610094565b50505050905090810190601f1680156100dc5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100f261036d565b6040518082815260200191505060405180910390f35b6101746004803603606081101561011e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610373565b604051808215151515815260200191505060405180910390f35b6101d0600480360360208110156101a457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610551565b6040518082815260200191505060405180910390f35b6101ee610569565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561022e578082015181840152602081019050610213565b50505050905090810190601f16801561025b5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6102b56004803603604081101561027f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610607565b604051808215151515815260200191505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103655780601f1061033a57610100808354040283529160200191610365565b820191906000526020600020905b81548152906001019060200180831161034857829003601f168201915b505050505081565b60025481565b600081600360008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054101561040d576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260378152602001806107e56037913960400191505060405180910390fd5b81600360008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254039250508190555081600360008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055507fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef848484604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1600190509392505050565b60036020528060005260406000206000915090505481565b60018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105ff5780601f106105d4576101008083540402835291602001916105ff565b820191906000526020600020905b8154815290600101906020018083116105e257829003601f168201915b505050505081565b600081600360003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410156106a1576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252603381526020018061081c6033913960400191505060405180910390fd5b81600360003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254039250508190555081600360008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055507fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef338484604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1600190509291505056fe7472616e7366657246726f6d2028524944494b4153293a2056616c7565206578636565647320746865206f776e65722062616c616e63657472616e736665722028524944494b4153293a2056616c7565206578636565647320746865206f776e65722062616c616e6365a265627a7a72315820de8d655606eaef9c25322ac1cad72f66e1a6b718f6ded542c5d599da8d40b1c464736f6c63430005100032",
   "sourceMap": "25:978:4:-;;;51:36;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;91:32;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;156:7;127:36;;296:67;8:9:-1;5:2;;;30:1;27;20:12;5:2;296:67:4;347:11;;323:9;:21;333:10;323:21;;;;;;;;;;;;;;;:35;;;;25:978;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
   "deployedSourceMap": "25:978:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:978:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;51:36;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;51:36:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;127;;;:::i;:::-;;;;;;;;;;;;;;;;;;;682:319;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;682:319:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;247:44;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;247:44:4;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;91:32;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;91:32:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;367:311;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;367:311:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;51:36;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;127:::-;;;;:::o;682:319::-;764:12;812:6;792:9;:16;802:5;792:16;;;;;;;;;;;;;;;;:26;;784:94;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;904:6;884:9;:16;894:5;884:16;;;;;;;;;;;;;;;;:26;;;;;;;;;;;934:6;916:9;:14;926:3;916:14;;;;;;;;;;;;;;;;:24;;;;;;;;;;;951:28;960:5;967:3;972:6;951:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;992:4;985:11;;682:319;;;;;:::o;247:44::-;;;;;;;;;;;;;;;;;:::o;91:32::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;367:311::-;430:12;483:6;458:9;:21;468:10;458:21;;;;;;;;;;;;;;;;:31;;450:95;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;576:6;551:9;:21;561:10;551:21;;;;;;;;;;;;;;;;:31;;;;;;;;;;;606:6;588:9;:14;598:3;588:14;;;;;;;;;;;;;;;;:24;;;;;;;;;;;623:33;632:10;644:3;649:6;623:33;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;669:4;662:11;;367:311;;;;:::o",
-  "source": "pragma solidity ^0.5.0;\n\ncontract RidikasToken {\n  string public name = \"Ridikas Token\";\n  string public symbol = \"RIDIKAS\";\n  uint256 public totalSupply = 1000000;\n\n  event Transfer(\n    address _from,\n    address _to,\n    uint256 _value\n  );\n\n  mapping(address => uint256) public balanceOf;\n\n  constructor() public {\n    balanceOf[msg.sender] = totalSupply;\n  }\n\n  function transfer(address _to, uint256 _value) public returns (bool success) {\n    require(balanceOf[msg.sender] >= _value, \"transfer (RIDIKAS): Value exceeds the owner balance\");\n    balanceOf[msg.sender] -= _value;\n    balanceOf[_to] += _value;\n    emit Transfer(msg.sender, _to, _value);\n    return true;\n  }\n\n  function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {\n    require(balanceOf[_from] >= _value, \"transferFrom (RIDIKAS): Value exceeds the owner balance\");\n    balanceOf[_from] -= _value;\n    balanceOf[_to] += _value;\n    emit Transfer(_from, _to, _value);\n    return true;\n  }\n}",
-  "sourcePath": "/Users/rendertom/Programming/VU-Blockchain-Task-4-Dapp/contracts/RidikasToken.sol",
+  "source": "pragma solidity ^0.5.0;\n\ncontract GoatToken {\n  string public name = \"Goat Token\";\n  string public symbol = \"GOAT\";\n  uint256 public totalSupply = 1000000;\n\n  event Transfer(\n    address _from,\n    address _to,\n    uint256 _value\n  );\n\n  mapping(address => uint256) public balanceOf;\n\n  constructor() public {\n    balanceOf[msg.sender] = totalSupply;\n  }\n\n  function transfer(address _to, uint256 _value) public returns (bool success) {\n    require(balanceOf[msg.sender] >= _value, \"transfer (GOAT): Value exceeds the owner balance\");\n    balanceOf[msg.sender] -= _value;\n    balanceOf[_to] += _value;\n    emit Transfer(msg.sender, _to, _value);\n    return true;\n  }\n\n  function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {\n    require(balanceOf[_from] >= _value, \"transferFrom (GOAT): Value exceeds the owner balance\");\n    balanceOf[_from] -= _value;\n    balanceOf[_to] += _value;\n    emit Transfer(_from, _to, _value);\n    return true;\n  }\n}",
+  "sourcePath": "/Users/rendertom/Programming/VU-Blockchain-Task-4-Dapp/contracts/GoatToken.sol",
   "ast": {
-    "absolutePath": "project:/contracts/RidikasToken.sol",
+    "absolutePath": "project:/contracts/GoatToken.sol",
     "exportedSymbols": {
-      "RidikasToken": [
+      "GoatToken": [
         847
       ]
     },
@@ -194,7 +194,7 @@
         "linearizedBaseContracts": [
           847
         ],
-        "name": "RidikasToken",
+        "name": "GoatToken",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
@@ -234,9 +234,9 @@
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_stringliteral_b3efa92c5bbb92b13e933a603edd3948a1729f5e749b82b61ee4b6dd721f4278",
-                "typeString": "literal_string \"Ridikas Token\""
+                "typeString": "literal_string \"Goat Token\""
               },
-              "value": "Ridikas Token"
+              "value": "Goat Token"
             },
             "visibility": "public"
           },
@@ -277,9 +277,9 @@
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_stringliteral_caa4ed7ff065a7ac41ff912d85826afc09e1640b46b7b74f8424558b8b476801",
-                "typeString": "literal_string \"RIDIKAS\""
+                "typeString": "literal_string \"GOAT\""
               },
-              "value": "RIDIKAS"
+              "value": "GOAT"
             },
             "visibility": "public"
           },
@@ -703,9 +703,9 @@
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_9f66bed37f9270c038dc03f686d8e2afbad95398881b9d934ad48e01f95b8636",
-                          "typeString": "literal_string \"transfer (RIDIKAS): Value exceeds the owner balance\""
+                          "typeString": "literal_string \"transfer (GOAT): Value exceeds the owner balance\""
                         },
-                        "value": "transfer (RIDIKAS): Value exceeds the owner balance"
+                        "value": "transfer (GOAT): Value exceeds the owner balance"
                       }
                     ],
                     "expression": {
@@ -716,7 +716,7 @@
                         },
                         {
                           "typeIdentifier": "t_stringliteral_9f66bed37f9270c038dc03f686d8e2afbad95398881b9d934ad48e01f95b8636",
-                          "typeString": "literal_string \"transfer (RIDIKAS): Value exceeds the owner balance\""
+                          "typeString": "literal_string \"transfer (GOAT): Value exceeds the owner balance\""
                         }
                       ],
                       "id": 772,
@@ -1245,9 +1245,9 @@
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_453850c1703051a6549487ac8386ece1acc35c721936c5653bbb11d1496709f8",
-                          "typeString": "literal_string \"transferFrom (RIDIKAS): Value exceeds the owner balance\""
+                          "typeString": "literal_string \"transferFrom (GOAT): Value exceeds the owner balance\""
                         },
-                        "value": "transferFrom (RIDIKAS): Value exceeds the owner balance"
+                        "value": "transferFrom (GOAT): Value exceeds the owner balance"
                       }
                     ],
                     "expression": {
@@ -1258,7 +1258,7 @@
                         },
                         {
                           "typeIdentifier": "t_stringliteral_453850c1703051a6549487ac8386ece1acc35c721936c5653bbb11d1496709f8",
-                          "typeString": "literal_string \"transferFrom (RIDIKAS): Value exceeds the owner balance\""
+                          "typeString": "literal_string \"transferFrom (GOAT): Value exceeds the owner balance\""
                         }
                       ],
                       "id": 816,
@@ -1695,9 +1695,9 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "project:/contracts/RidikasToken.sol",
+      "absolutePath": "project:/contracts/GoatToken.sol",
       "exportedSymbols": {
-        "RidikasToken": [
+        "GoatToken": [
           847
         ]
       }
@@ -1730,7 +1730,7 @@
           "linearizedBaseContracts": [
             847
           ],
-          "name": "RidikasToken",
+          "name": "GoatToken",
           "scope": 848
         },
         "children": [
@@ -1764,8 +1764,8 @@
                   "lValueRequested": false,
                   "subdenomination": null,
                   "token": "string",
-                  "type": "literal_string \"Ridikas Token\"",
-                  "value": "Ridikas Token"
+                  "type": "literal_string \"Goat Token\"",
+                  "value": "Goat Token"
                 },
                 "id": 733,
                 "name": "Literal",
@@ -1806,8 +1806,8 @@
                   "lValueRequested": false,
                   "subdenomination": null,
                   "token": "string",
-                  "type": "literal_string \"RIDIKAS\"",
-                  "value": "RIDIKAS"
+                  "type": "literal_string \"GOAT\"",
+                  "value": "GOAT"
                 },
                 "id": 736,
                 "name": "Literal",
@@ -2291,7 +2291,7 @@
                                 },
                                 {
                                   "typeIdentifier": "t_stringliteral_9f66bed37f9270c038dc03f686d8e2afbad95398881b9d934ad48e01f95b8636",
-                                  "typeString": "literal_string \"transfer (RIDIKAS): Value exceeds the owner balance\""
+                                  "typeString": "literal_string \"transfer (GOAT): Value exceeds the owner balance\""
                                 }
                               ],
                               "overloadedDeclarations": [
@@ -2410,8 +2410,8 @@
                               "lValueRequested": false,
                               "subdenomination": null,
                               "token": "string",
-                              "type": "literal_string \"transfer (RIDIKAS): Value exceeds the owner balance\"",
-                              "value": "transfer (RIDIKAS): Value exceeds the owner balance"
+                              "type": "literal_string \"transfer (GOAT): Value exceeds the owner balance\"",
+                              "value": "transfer (GOAT): Value exceeds the owner balance"
                             },
                             "id": 779,
                             "name": "Literal",
@@ -2918,7 +2918,7 @@
                                 },
                                 {
                                   "typeIdentifier": "t_stringliteral_453850c1703051a6549487ac8386ece1acc35c721936c5653bbb11d1496709f8",
-                                  "typeString": "literal_string \"transferFrom (RIDIKAS): Value exceeds the owner balance\""
+                                  "typeString": "literal_string \"transferFrom (GOAT): Value exceeds the owner balance\""
                                 }
                               ],
                               "overloadedDeclarations": [
@@ -3020,8 +3020,8 @@
                               "lValueRequested": false,
                               "subdenomination": null,
                               "token": "string",
-                              "type": "literal_string \"transferFrom (RIDIKAS): Value exceeds the owner balance\"",
-                              "value": "transferFrom (RIDIKAS): Value exceeds the owner balance"
+                              "type": "literal_string \"transferFrom (GOAT): Value exceeds the owner balance\"",
+                              "value": "transferFrom (GOAT): Value exceeds the owner balance"
                             },
                             "id": 822,
                             "name": "Literal",

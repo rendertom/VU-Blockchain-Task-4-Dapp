@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import getWeb3 from "./utils/getWeb3";
 
-import BulveToken from "./contracts/BulveToken.json";
+import ChickenToken from "./contracts/ChickenToken.json";
 import EurToken from "./contracts/EurToken.json";
 import Farm from "./contracts/Farm.json";
-import MorkaToken from "./contracts/MorkaToken.json";
-import RidikasToken from "./contracts/RidikasToken.json";
+import CowToken from "./contracts/CowToken.json";
+import GoatToken from "./contracts/GoatToken.json";
 
 import Header from './components/Header';
 import Dialog from './components/Dialog';
@@ -16,10 +16,10 @@ const App = () => {
   const [account, setAccount] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  const [bulve, setBulve] = useState({ contract: null, balance: null });
+  const [chicken, setChicken] = useState({ contract: null, balance: null });
   const [eur, setEur] = useState({ contract: null, balance: null });
-  const [morka, setMorka] = useState({ contract: null, balance: null });
-  const [ridikas, setRidikas] = useState({ contract: null, balance: null });
+  const [cow, setCow] = useState({ contract: null, balance: null });
+  const [goat, setGoat] = useState({ contract: null, balance: null });
   const [farm, setFarm] = useState({ contract: null, balance: null });
 
   useEffect(() => {
@@ -40,12 +40,12 @@ const App = () => {
         return new web3.eth.Contract(_token.abi, address.address, { from: account });
       }
 
-      const [bulve, eur, farm, morka, ridikas] = await Promise.all([
-        initContract(BulveToken),
+      const [chicken, eur, farm, cow, goat] = await Promise.all([
+        initContract(ChickenToken),
         initContract(EurToken),
         initContract(Farm),
-        initContract(MorkaToken),
-        initContract(RidikasToken),
+        initContract(CowToken),
+        initContract(GoatToken),
       ]);
 
       const getContractData = async (contract) => {
@@ -59,16 +59,16 @@ const App = () => {
         }
       }
 
-      setBulve(await getContractData(bulve));
+      setChicken(await getContractData(chicken));
       setEur(await getContractData(eur));
-      setMorka(await getContractData(morka));
-      setRidikas(await getContractData(ridikas));
+      setCow(await getContractData(cow));
+      setGoat(await getContractData(goat));
       setFarm({
         contract: farm,
         balance: {
-          BULVE: await getStakingBalance(farm, 'BULVE'),
-          MORKA: await getStakingBalance(farm, 'MORKA'),
-          RIDIKAS: await getStakingBalance(farm, 'RIDIKAS')
+          CHICKEN: await getStakingBalance(farm, 'CHICKEN'),
+          COW: await getStakingBalance(farm, 'COW'),
+          GOAT: await getStakingBalance(farm, 'GOAT')
         }
       });
 
@@ -128,8 +128,8 @@ const App = () => {
         onStakeClick={onStakeClick}
         onUnstakeClick={onUnstakeClick}
       />
-      <Table items={[bulve, morka, ridikas]} farmBalance={farm.balance} />
-      <Footer items={[bulve, morka, ridikas]}
+      <Table items={[chicken, cow, goat]} farmBalance={farm.balance} />
+      <Footer items={[chicken, cow, goat]}
         onIssueTokensClick={onIssueTokensClick}
       />
     </div>
