@@ -90,6 +90,13 @@ const App = () => {
     })
   }
 
+  const sellTokens = (amount, currency) => {
+    setIsLoading(true);
+    farm.contract.methods.sellTokens(amount, currency).send({ from: account }).on('transactionHash', (hash) => {
+      setIsLoading(false);
+    })
+  }
+  
   const issueTokens = (currency) => {
     setIsLoading(true);
     farm.contract.methods.issueTokens(currency).send({ from: account }).on('transactionHash', (hash) => {
@@ -116,6 +123,15 @@ const App = () => {
     unstakeTokens(value, animal);
   };
 
+  const onSellClick = (value, animal) => {
+    value = parseInt(value);
+    if (isNaN(value)) return alert("Value is not a number");
+    if (value <= 0) return alert("Value should be greater than 0");
+
+    animal = animal.toUpperCase();
+    sellTokens(value, animal);
+  }
+
   const onIssueTokensClick = (animal) => {
     animal = animal.toUpperCase();
     issueTokens(animal);
@@ -131,6 +147,7 @@ const App = () => {
       <Dialog
         onStakeClick={onStakeClick}
         onUnstakeClick={onUnstakeClick}
+        onSellClick={onSellClick}
       />
       <Table items={[chicken, cow, goat]} farmBalance={farm.balance} />
       <Footer items={[chicken, cow, goat]}

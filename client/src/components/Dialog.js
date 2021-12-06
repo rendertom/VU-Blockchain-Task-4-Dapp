@@ -6,7 +6,7 @@ import Radio from './Radio';
 
 import styles from "../styles/Dialog.module.css";
 
-const Dialog = ({onStakeClick, onUnstakeClick}) => {
+const Dialog = ({onStakeClick, onUnstakeClick, onSellClick}) => {
   const [value, setValue] = useState(0);
   const [animal, setAnimal] = useState("chicken");
 
@@ -16,6 +16,10 @@ const Dialog = ({onStakeClick, onUnstakeClick}) => {
 
   const _onUnstakeClick = () => {
     onUnstakeClick(value, animal);
+  }
+
+  const _onSellClick = () => {
+    onSellClick(value, animal);
   }
 
   const onRadioChange = (animal) => {
@@ -35,6 +39,7 @@ const Dialog = ({onStakeClick, onUnstakeClick}) => {
       <div className={styles.row}>
         <Button title="stake" onClick={_onStakeClick} />
         <Button title="withdraw" onClick={_onUnstakeClick} />
+        <Button title="sell" onClick={_onSellClick} />
       </div>
     </div>
   )
