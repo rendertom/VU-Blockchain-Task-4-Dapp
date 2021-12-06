@@ -83,9 +83,9 @@ const App = () => {
     })
   }
 
-  const unstakeTokens = (currency) => {
+  const unstakeTokens = (amount, currency) => {
     setIsLoading(true);
-    farm.contract.methods.unstakeTokens(currency).send({ from: account }).on('transactionHash', (hash) => {
+    farm.contract.methods.unstakeTokens(amount, currency).send({ from: account }).on('transactionHash', (hash) => {
       setIsLoading(false);
     })
   }
@@ -108,8 +108,12 @@ const App = () => {
   };
 
   const onUnstakeClick = (value, animal) => {
+    value = parseInt(value);
+    if (isNaN(value)) return alert("Value is not a number");
+    if (value <= 0) return alert("Value should be greater than 0");
+
     animal = animal.toUpperCase();
-    unstakeTokens(animal);
+    unstakeTokens(value, animal);
   };
 
   const onIssueTokensClick = (animal) => {
