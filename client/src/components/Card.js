@@ -26,7 +26,7 @@ const Card = ({symbol, name, totalSupply, issued, onIssueTokensClick}) => {
       <p>{name}</p>
       <h5>total supply: {totalSupply}</h5>
       <h5>available: {issued}</h5>
-      <img style={styles.icon} src={assets[symbol.toLowerCase()]} />
+      <img style={styles.icon} src={assets[symbol.toLowerCase()]} alt={symbol.toLowerCase()} />
       <Button title="issue" onClick={onIssueTokensClick}/>
     </div>
   )

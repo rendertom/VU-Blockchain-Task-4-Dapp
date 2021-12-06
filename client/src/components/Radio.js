@@ -9,7 +9,7 @@ const Radio = ({activeItem, onClick}) => {
   return (
     images.map((item, index) => {
       return (
-        <img key={index}
+        <img key={index} alt={item}
           className={getClassName(item)}
           src={assets[item]}
           onClick={() => {onClick(item)}}
