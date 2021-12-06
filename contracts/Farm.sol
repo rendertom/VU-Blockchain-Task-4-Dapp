@@ -63,16 +63,22 @@ contract Farm {
         user.isStaking = true;
     }
 
-    function unstakeTokens(string memory _simbol) public {
+    function unstakeTokens(uint256 _amount, string memory _simbol) public {
         Currency storage currency = currencies[_simbol];
         User storage user = currency.user[msg.sender];
         uint balance = user.eurBalance;
 
         require(balance > 0, "Farm: staking balance cannot be 0");
-        eurToken.transfer(msg.sender, balance);
 
-        user.eurBalance = 0;
-        user.isStaking = false;
+        uint256 amount = _amount;
+        if (amount > balance) amount = balance;
+
+        eurToken.transfer(msg.sender, amount);
+
+        user.eurBalance = balance - amount;
+        if (user.eurBalance == 0) {
+            user.isStaking = false;
+        }
     }
 
     function issueTokens(string memory _simbol) public {

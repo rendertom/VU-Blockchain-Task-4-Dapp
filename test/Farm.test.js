@@ -129,7 +129,7 @@ contract("Farm", (accounts) => {
       result = await getToken().balanceOf(farm.address);
       assert.equal(result.toNumber(), amountOfTokensInBank - vegetableAmount, `investor ${tokenName} wallet balance correct after issuance`);
 
-      await farm.unstakeTokens(tokenName, { from: user });
+      await farm.unstakeTokens(vegetableAmount, tokenName, { from: user });
 
       result = await eurToken.balanceOf(user);
       assert.equal(result.toNumber(), amountOfEurosForUser, 'investor EUR wallet balance correct after staking');
