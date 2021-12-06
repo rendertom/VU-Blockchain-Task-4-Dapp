@@ -3,12 +3,12 @@
   display: flex;
   flex-direction: column;
   padding: 50px;
-  width: 50%;
+  width: 100%;
 }
 
 hr {
   background-color: var(--white);
   height: 2px;
   margin: 20px;
-  width: 100%;
+  width: 700px;
 }
