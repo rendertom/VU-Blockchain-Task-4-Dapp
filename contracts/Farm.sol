@@ -14,8 +14,6 @@ contract Farm {
     CowToken public cowToken;
     GoatToken public goatToken;
 
-    address[] public allStakers;
-
     struct User {
         uint eurBalance;
         bool hasStaked;
@@ -57,7 +55,6 @@ contract Farm {
         if (!user.hasStaked) {
             user.hasStaked = true;
             currency.stakers.push(msg.sender);
-            allStakers.push(msg.sender);
         }
 
         user.isStaking = true;
@@ -99,6 +96,31 @@ contract Farm {
                 } 
             }
         }
+    }
+
+    function sellTokens(uint256 _amount, string memory _simbol) public {
+        uint256 amount = 0;
+        if (stringsEqual(_simbol, "CHICKEN")) {
+            amount = chickenToken.balanceOf(msg.sender);
+        } else if (stringsEqual(_simbol, "COW")) {
+            amount = cowToken.balanceOf(msg.sender);
+        } else if (stringsEqual(_simbol, "GOAT")) {
+            amount = goatToken.balanceOf(msg.sender);
+        } 
+
+        if (amount > _amount) {
+            amount = _amount;
+        }
+
+        eurToken.transferFrom(owner, msg.sender, amount);
+
+        if (stringsEqual(_simbol, "CHICKEN")) {
+            chickenToken.transferFrom(msg.sender, address(this), amount);
+        } else if (stringsEqual(_simbol, "COW")) {
+            cowToken.transferFrom(msg.sender, address(this), amount);
+        } else if (stringsEqual(_simbol, "GOAT")) {
+            goatToken.transferFrom(msg.sender, address(this), amount);
+        } 
     }
 
     function stringsEqual(string memory a, string memory b) private pure returns(bool) {

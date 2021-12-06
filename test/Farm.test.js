@@ -129,6 +129,20 @@ contract("Farm", (accounts) => {
       result = await getToken().balanceOf(farm.address);
       assert.equal(result.toNumber(), amountOfTokensInBank - vegetableAmount, `investor ${tokenName} wallet balance correct after issuance`);
 
+      await farm.sellTokens(555, tokenName, { from: user });
+
+      result = await eurToken.balanceOf(user);
+      assert.equal(result.toNumber(), vegetableAmount * 2, 'investor EUR wallet balance correct after selling');
+
+      result = await eurToken.balanceOf(owner);
+      assert.equal(result.toNumber(), amountOfTokensInBank - amountOfEurosForUser - vegetableAmount , 'owner EUR balance correct after selling');
+
+      result = await getToken().balanceOf(user);
+      assert.equal(result.toNumber(), 0, `investor ${tokenName} wallet balance correct after issuance`);
+
+      // return back euros that you got when sold shit (otherwise test fails)
+      await eurToken.transfer(owner, vegetableAmount, { from: user });
+
       await farm.unstakeTokens(vegetableAmount, tokenName, { from: user });
 
       result = await eurToken.balanceOf(user);
