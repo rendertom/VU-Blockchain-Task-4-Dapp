@@ -1,8 +1,8 @@
 pragma solidity ^0.5.0;
 
-contract MorkaToken {
-  string public name = "Morka Token";
-  string public symbol = "MORKA";
+contract ChickenToken {
+  string public name = "Chicken Token";
+  string public symbol = "CHICKEN";
   uint256 public totalSupply = 1000000;
 
   event Transfer(
@@ -18,7 +18,7 @@ contract MorkaToken {
   }
 
   function transfer(address _to, uint256 _value) public returns (bool success) {
-    require(balanceOf[msg.sender] >= _value, "transfer (MORKA): Value exceeds the owner balance");
+    require(balanceOf[msg.sender] >= _value, "transfer (CHICKEN): Value exceeds the owner balance");
     balanceOf[msg.sender] -= _value;
     balanceOf[_to] += _value;
     emit Transfer(msg.sender, _to, _value);
@@ -26,7 +26,7 @@ contract MorkaToken {
   }
 
   function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
-    require(balanceOf[_from] >= _value, "transferFrom (MORKA): Value exceeds the owner balance");
+    require(balanceOf[_from] >= _value, "transferFrom (CHICKEN): Value exceeds the owner balance");
     balanceOf[_from] -= _value;
     balanceOf[_to] += _value;
     emit Transfer(_from, _to, _value);

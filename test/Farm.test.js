@@ -1,8 +1,8 @@
-const BulveToken = artifacts.require('BulveToken.sol');
+const ChickenToken = artifacts.require('ChickenToken.sol');
 const EurToken = artifacts.require('EurToken.sol');
 const Farm = artifacts.require('Farm.sol');
-const MorkaToken = artifacts.require('MorkaToken.sol');
-const RidikasToken = artifacts.require('RidikasToken.sol');
+const CowToken = artifacts.require('CowToken.sol');
+const GoatToken = artifacts.require('GoatToken.sol');
 
 const amountOfTokensInBank = 1000000;
 const amountOfEurosForUser = 100;
@@ -10,20 +10,20 @@ const amountOfEurosForUser = 100;
 contract("Farm", (accounts) => {
   const [owner, user] = accounts;
 
-  let bulveToken, farm, eurToken, morkaToken, ridikasToken;
+  let chickenToken, farm, eurToken, cowToken, goatToken;
   before(async () => {
-    [bulveToken, eurToken, morkaToken, ridikasToken] = await Promise.all([
-      BulveToken.new(),
+    [chickenToken, eurToken, cowToken, goatToken] = await Promise.all([
+      ChickenToken.new(),
       EurToken.new(),
-      MorkaToken.new(),
-      RidikasToken.new(),
+      CowToken.new(),
+      GoatToken.new(),
     ]);
 
-    farm = await Farm.new(bulveToken.address, eurToken.address, morkaToken.address, ridikasToken.address);
+    farm = await Farm.new(chickenToken.address, eurToken.address, cowToken.address, goatToken.address);
 
-    await bulveToken.transfer(farm.address, amountOfTokensInBank);
-    await morkaToken.transfer(farm.address, amountOfTokensInBank);
-    await ridikasToken.transfer(farm.address, amountOfTokensInBank);
+    await chickenToken.transfer(farm.address, amountOfTokensInBank);
+    await cowToken.transfer(farm.address, amountOfTokensInBank);
+    await goatToken.transfer(farm.address, amountOfTokensInBank);
 
     await eurToken.transfer(user, amountOfEurosForUser, { from: owner });
   });
@@ -50,24 +50,24 @@ contract("Farm", (accounts) => {
     });
   });
 
-  describe('BULVE (Bulve Token) deployment', async () => {
+  describe('CHICKEN (Chicken Token) deployment', async () => {
     it('has a name', async () => {
-      const name = await bulveToken.name();
-      assert.equal(name, 'Bulve Token');
+      const name = await chickenToken.name();
+      assert.equal(name, 'Chicken Token');
     });
   });
 
-  describe('MORKA (Morka Token) deployment', async () => {
+  describe('COW (Cow Token) deployment', async () => {
     it('has a name', async () => {
-      const name = await morkaToken.name();
-      assert.equal(name, 'Morka Token');
+      const name = await cowToken.name();
+      assert.equal(name, 'Cow Token');
     });
   });
 
-  describe('RIDIKAS (Ridikas Token) deployment', async () => {
+  describe('GOAT (Goat Token) deployment', async () => {
     it('has a name', async () => {
-      const name = await ridikasToken.name();
-      assert.equal(name, 'Ridikas Token');
+      const name = await goatToken.name();
+      assert.equal(name, 'Goat Token');
     });
   });
 
@@ -78,25 +78,25 @@ contract("Farm", (accounts) => {
     });
 
     it('contract has tokens', async () => {
-      let balance = await bulveToken.balanceOf(farm.address);
+      let balance = await chickenToken.balanceOf(farm.address);
       assert.equal(balance.toNumber(), amountOfTokensInBank);
     })
   });
 
   describe('Farming tokens', async () => {
     testFarming({
-      getToken: () => bulveToken,
-      tokenName: 'BULVE',
+      getToken: () => chickenToken,
+      tokenName: 'CHICKEN',
     });
 
     testFarming({
-      getToken: () => morkaToken,
-      tokenName: 'MORKA',
+      getToken: () => cowToken,
+      tokenName: 'COW',
     });
 
     testFarming({
-      getToken: () => ridikasToken,
-      tokenName: 'RIDIKAS',
+      getToken: () => goatToken,
+      tokenName: 'GOAT',
     });
   });
 

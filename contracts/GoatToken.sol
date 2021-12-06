@@ -1,8 +1,8 @@
 pragma solidity ^0.5.0;
 
-contract RidikasToken {
-  string public name = "Ridikas Token";
-  string public symbol = "RIDIKAS";
+contract GoatToken {
+  string public name = "Goat Token";
+  string public symbol = "GOAT";
   uint256 public totalSupply = 1000000;
 
   event Transfer(
@@ -18,7 +18,7 @@ contract RidikasToken {
   }
 
   function transfer(address _to, uint256 _value) public returns (bool success) {
-    require(balanceOf[msg.sender] >= _value, "transfer (RIDIKAS): Value exceeds the owner balance");
+    require(balanceOf[msg.sender] >= _value, "transfer (GOAT): Value exceeds the owner balance");
     balanceOf[msg.sender] -= _value;
     balanceOf[_to] += _value;
     emit Transfer(msg.sender, _to, _value);
@@ -26,7 +26,7 @@ contract RidikasToken {
   }
 
   function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
-    require(balanceOf[_from] >= _value, "transferFrom (RIDIKAS): Value exceeds the owner balance");
+    require(balanceOf[_from] >= _value, "transferFrom (GOAT): Value exceeds the owner balance");
     balanceOf[_from] -= _value;
     balanceOf[_to] += _value;
     emit Transfer(_from, _to, _value);

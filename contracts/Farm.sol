@@ -1,18 +1,18 @@
 pragma solidity ^0.5.0;
 
-import "./BulveToken.sol";
+import "./ChickenToken.sol";
 import "./EurToken.sol";
-import "./MorkaToken.sol";
-import "./RidikasToken.sol";
+import "./CowToken.sol";
+import "./GoatToken.sol";
 
 contract Farm {
     string public name = "Farm";
     address public owner;
 
-    BulveToken public bulveToken;
+    ChickenToken public chickenToken;
     EurToken public eurToken;
-    MorkaToken public morkaToken;
-    RidikasToken public ridikasToken;
+    CowToken public cowToken;
+    GoatToken public goatToken;
 
     address[] public allStakers;
 
@@ -29,11 +29,11 @@ contract Farm {
 
     mapping(string => Currency) currencies;
 
-    constructor(BulveToken _bulveToken, EurToken _eurToken, MorkaToken _morkaToken, RidikasToken _ridikasToken) public {
-        bulveToken = _bulveToken;
+    constructor(ChickenToken _chickenToken, EurToken _eurToken, CowToken _cowToken, GoatToken _goatToken) public {
+        chickenToken = _chickenToken;
         eurToken = _eurToken;
-        morkaToken = _morkaToken;
-        ridikasToken = _ridikasToken;
+        cowToken = _cowToken;
+        goatToken = _goatToken;
         owner = msg.sender;
     }
 
@@ -84,12 +84,12 @@ contract Farm {
         for (uint i = 0; i < stakers.length; i++) {
             User storage user = currency.user[stakers[i]];
             if (user.eurBalance > 0) {
-                if (stringsEqual(_simbol, "BULVE")) {
-                    bulveToken.transfer(stakers[i], user.eurBalance);
-                } else if (stringsEqual(_simbol, "MORKA")) {
-                    morkaToken.transfer(stakers[i], user.eurBalance);
-                } else if (stringsEqual(_simbol, "RIDIKAS")) {
-                    ridikasToken.transfer(stakers[i], user.eurBalance);
+                if (stringsEqual(_simbol, "CHICKEN")) {
+                    chickenToken.transfer(stakers[i], user.eurBalance);
+                } else if (stringsEqual(_simbol, "COW")) {
+                    cowToken.transfer(stakers[i], user.eurBalance);
+                } else if (stringsEqual(_simbol, "GOAT")) {
+                    goatToken.transfer(stakers[i], user.eurBalance);
                 } 
             }
         }

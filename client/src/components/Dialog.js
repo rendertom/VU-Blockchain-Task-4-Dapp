@@ -6,7 +6,7 @@ import Radio from './Radio';
 
 const Dialog = ({onStakeClick, onUnstakeClick}) => {
   const [value, setValue] = useState(0);
-  const [animal, setAnimal] = useState("bulve");
+  const [animal, setAnimal] = useState("chicken");
 
   const _onStakeClick = () => {
     onStakeClick(value, animal);
