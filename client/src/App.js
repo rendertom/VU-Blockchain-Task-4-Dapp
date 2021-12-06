@@ -15,6 +15,8 @@ import Table from './components/Table';
 const App = () => {
   const [account, setAccount] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [web3, setWeb3] = useState(null);
+  const [needUpdate, setNeedUpdate] = useState(false);
 
   const [chicken, setChicken] = useState({ contract: null, balance: null });
   const [eur, setEur] = useState({ contract: null, balance: null });
@@ -26,20 +28,37 @@ const App = () => {
     init().catch(console.error);
     async function init() {
       const web3 = await getWeb3();
+      setWeb3(web3);
 
       const accounts = await web3.eth.getAccounts();
-      const account = accounts[0];
-      setAccount(account);
+      setAccount(accounts[0]);
+    }
+  }, []);
 
-      const networkId = await web3.eth.net.getId();
+  const balanceOf = (contract, _account = account) => contract.methods.balanceOf(_account).call();
+  const getStakingBalance = (contract, currency) => contract.methods.getUserBalance(currency).call();
+  const initContract = async (_token) => {
+    const networkId = await web3.eth.net.getId();
+    const address = _token.networks[networkId];
+    return new web3.eth.Contract(_token.abi, address.address, { from: account });
+  }
 
-      const balanceOf = (contract, _account = account) => contract.methods.balanceOf(_account).call();
-      const getStakingBalance = (contract, currency) => contract.methods.getUserBalance(currency).call();
-      const initContract = (_token) => {
-        const address = _token.networks[networkId];
-        return new web3.eth.Contract(_token.abi, address.address, { from: account });
-      }
+  const getContractData = async (contract, farm) => {
+    return {
+      contract: contract,
+      balance: await balanceOf(contract),
+      left: await balanceOf(contract, farm._address),
+      totalSupply: await contract.methods.totalSupply().call(),
+      name: await contract.methods.name().call(),
+      symbol: await contract.methods.symbol().call(),
+    }
+  }
 
+  useEffect(() => {
+    if (!account) return;
+
+    init().catch(console.error);
+    async function init() {
       const [chicken, eur, farm, cow, goat] = await Promise.all([
         initContract(ChickenToken),
         initContract(EurToken),
@@ -48,21 +67,10 @@ const App = () => {
         initContract(GoatToken),
       ]);
 
-      const getContractData = async (contract) => {
-        return {
-          contract: contract,
-          balance: await balanceOf(contract),
-          left: await balanceOf(contract, farm._address),
-          totalSupply: await contract.methods.totalSupply().call(),
-          name: await contract.methods.name().call(),
-          symbol: await contract.methods.symbol().call(),
-        }
-      }
-
-      setChicken(await getContractData(chicken));
-      setEur(await getContractData(eur));
-      setCow(await getContractData(cow));
-      setGoat(await getContractData(goat));
+      setChicken(await getContractData(chicken, farm));
+      setEur(await getContractData(eur, farm));
+      setCow(await getContractData(cow, farm));
+      setGoat(await getContractData(goat, farm));
       setFarm({
         contract: farm,
         balance: {
@@ -73,68 +81,51 @@ const App = () => {
       });
 
       setIsLoading(false);
+      setNeedUpdate(false);
     }
-  }, []);
+  }, [account, needUpdate]);
 
-  const stakeTokens = (amount, currency) => {
-    setIsLoading(true);
+
+  const onStakeClick = (amount, currency) => {
+    amount = parseInt(amount);
+    if (isNaN(amount)) return alert("Value is not a number");
+    if (amount <= 0) return alert("Value should be greater than 0");
+
+    currency = currency.toUpperCase();
+
     farm.contract.methods.stakeTokens(amount, currency).send({ from: account }).on('transactionHash', (hash) => {
-      setIsLoading(false);
+      setNeedUpdate(true);
     })
-  }
+  };
 
-  const unstakeTokens = (amount, currency) => {
-    setIsLoading(true);
+  const onUnstakeClick = (amount, currency) => {
+    amount = parseInt(amount);
+    if (isNaN(amount)) return alert("Value is not a number");
+    if (amount <= 0) return alert("Value should be greater than 0");
+
+    currency = currency.toUpperCase();
+
     farm.contract.methods.unstakeTokens(amount, currency).send({ from: account }).on('transactionHash', (hash) => {
-      setIsLoading(false);
+      setNeedUpdate(true);
     })
-  }
+  };
 
-  const sellTokens = (amount, currency) => {
-    setIsLoading(true);
+  const onSellClick = (amount, currency) => {
+    amount = parseInt(amount);
+    if (isNaN(amount)) return alert("Value is not a number");
+    if (amount <= 0) return alert("Value should be greater than 0");
+
+    currency = currency.toUpperCase();
     farm.contract.methods.sellTokens(amount, currency).send({ from: account }).on('transactionHash', (hash) => {
-      setIsLoading(false);
+      setNeedUpdate(true);
     })
   }
-  
-  const issueTokens = (currency) => {
-    setIsLoading(true);
+
+  const onIssueTokensClick = (currency) => {
+    currency = currency.toUpperCase();
     farm.contract.methods.issueTokens(currency).send({ from: account }).on('transactionHash', (hash) => {
-      setIsLoading(false);
+      setNeedUpdate(true);
     })
-  }
-
-  const onStakeClick = (value, animal) => {
-    value = parseInt(value);
-    if (isNaN(value)) return alert("Value is not a number");
-    if (value <= 0) return alert("Value should be greater than 0");
-
-    animal = animal.toUpperCase();
-
-    stakeTokens(value, animal);
-  };
-
-  const onUnstakeClick = (value, animal) => {
-    value = parseInt(value);
-    if (isNaN(value)) return alert("Value is not a number");
-    if (value <= 0) return alert("Value should be greater than 0");
-
-    animal = animal.toUpperCase();
-    unstakeTokens(value, animal);
-  };
-
-  const onSellClick = (value, animal) => {
-    value = parseInt(value);
-    if (isNaN(value)) return alert("Value is not a number");
-    if (value <= 0) return alert("Value should be greater than 0");
-
-    animal = animal.toUpperCase();
-    sellTokens(value, animal);
-  }
-
-  const onIssueTokensClick = (animal) => {
-    animal = animal.toUpperCase();
-    issueTokens(animal);
   }
 
   if (isLoading) {
