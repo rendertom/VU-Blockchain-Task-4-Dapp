@@ -1,14 +1,22 @@
 button {
-  background-color: #DE2769;
+  background-color: var(--pink);
   border: none;
   border-radius: 10px;
-  color: white;
+  color: var(--white);
   display: flex;
-  font-size: 16px;
   font-weight: 300;
   justify-content: center;
-  margin: 5px;
-  padding: 20px;
   text-transform: uppercase;
   width: 100%;
+}
+
+.large {
+  font-size: 16px;
+  margin: 5px;
+  padding: 20px;
+}
+
+.small {
+  font-size: 14px;
+  padding: 10px;
 }

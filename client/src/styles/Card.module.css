@@ -1,7 +1,8 @@
 .card {
-  background-color: white;
-  border-radius: 20px;
-  margin: 0 50px;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  color: var(--black);
+  margin: 0 70px;
   padding: 20px;
   position: relative;
 }
@@ -12,4 +13,12 @@
   position: absolute;
   top: -25px;
   right: -50px;
+}
+
+.stats {
+  padding: 10px 0;
+}
+
+.subtitle {
+  color: var(--gray);
 }

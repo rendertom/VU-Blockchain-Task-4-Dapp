@@ -1,20 +1,19 @@
 table {
-  margin-top: -20px;
-  color: white;
-  font-size: 24px;
+  background-color: var(--brown);
   border-collapse: collapse;
-  background-color: #671618;
-  border-radius: 10px;
-  z-index: 0;
+  border-radius: var(--border-radius);
+  font-size: 20px;
+  margin-top: -30px;
   width: 420px;
+  z-index: 0;
 }
 
 th,
 td {
-  padding: 10px 20px;
+  padding: 5px 0;
   text-align: center;
 }
 
 th {
-  padding-top: 30px;
+  padding-top: 40px;
 }

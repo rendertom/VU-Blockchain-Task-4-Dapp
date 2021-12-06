@@ -24,8 +24,8 @@ const Dialog = ({onStakeClick, onUnstakeClick}) => {
 
   return (
     <div className={styles.background}>
-      <p>Stake your € and earn some animals</p>
-      <div className={styles.row}>
+      <p className={styles.title}>Stake your € and earn some animals</p>
+      <div className={styles.row + ' ' + styles.input}>
         <InputText onChange={setValue} />
         <Radio
           activeItem={animal}
