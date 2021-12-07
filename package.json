@@ -1,0 +1,25 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "Based on [truffle react](https://www.trufflesuite.com/boxes/react) and [Blockchain Tutorial for Beginners](https://www.youtube.com/watch?v=CgXQC4dbGUE)",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rendertom/VU-Blockchain-Task-4-Dapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rendertom/VU-Blockchain-Task-4-Dapp/issues"
+  },
+  "homepage": "https://github.com/rendertom/VU-Blockchain-Task-4-Dapp#readme",
+  "dependencies": {
+    "truffle-hdwallet-provider": "^1.0.17"
+  }
+}
