@@ -11,6 +11,7 @@ import Header from './components/Header';
 import Dialog from './components/Dialog';
 import Footer from './components/Footer';
 import Table from './components/Table';
+import Button from './components/Button';
 
 const App = () => {
   const [account, setAccount] = useState(null);
@@ -128,12 +129,22 @@ const App = () => {
     })
   }
 
+  const depositEur = async (amount) => {
+    const owner = await eur.contract.methods.owner().call();
+    eur.contract.methods.transferFrom(owner, account, amount).send().on('transactionHash', (hash) => {
+      setNeedUpdate(true);
+    })
+  }
+
   if (isLoading) {
     return <div className="main"><h1>loading...</h1></div>
   }
 
   return (
     <div className="main">
+      <div style={{ position: "absolute", left: "20px" }}>
+        <Button title="deposit 100€ to account" size="small" onClick={() => depositEur(100)} />
+      </div>
       <Header account={account} balance={eur.balance} />
       <Dialog
         onStakeClick={onStakeClick}
