@@ -1,0 +1,68 @@
+:root {
+  --white: #FFFFFF;
+  --black: #321841;
+  --pink: #DE2769;
+  --pink-dark: #cb0e53;
+  --yellow: #FFCA1F;
+  --brown: #671618;
+  --gray: #808080;
+  --border-radius: 20px;
+}
+
+body,
+html {
+  height: 100%;
+
+  background-image: url("../images/farm.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: var(--white);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Rowdies', cursive;
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+small {
+  font-size: 12px;
+}
+
+.main {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

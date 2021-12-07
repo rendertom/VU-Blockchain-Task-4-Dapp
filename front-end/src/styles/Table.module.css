@@ -1,0 +1,19 @@
+table {
+  background-color: var(--brown);
+  border-collapse: collapse;
+  border-radius: var(--border-radius);
+  font-size: 20px;
+  margin-top: -30px;
+  width: 420px;
+  z-index: 0;
+}
+
+th,
+td {
+  padding: 5px 0;
+  text-align: center;
+}
+
+th {
+  padding-top: 40px;
+}

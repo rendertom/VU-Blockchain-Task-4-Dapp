@@ -1,0 +1,13 @@
+.radioImage {
+  height: 50px;
+  margin: 5px;
+}
+
+.radioImage:hover {
+  cursor: pointer;
+}
+
+.round {
+  border-radius: 100%;
+  border: 5px solid var(--pink);
+}
