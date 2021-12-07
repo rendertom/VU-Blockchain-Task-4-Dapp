@@ -1,0 +1,14 @@
+{
+  "name": "farm-back-end",
+  "version": "1.0.0",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/rendertom/VU-Blockchain-Task-4-Dapp",
+  "dependencies": {
+    "truffle-hdwallet-provider": "^1.0.17"
+  }
+}

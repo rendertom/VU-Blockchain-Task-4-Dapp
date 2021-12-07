@@ -16,7 +16,7 @@ Based on [truffle react](https://www.trufflesuite.com/boxes/react) and [Blockcha
 
 ---
 
-## Contract sests
+## Contract tests
 
 1. Run `truffle test` to execute contract tests.
 

@@ -6,7 +6,7 @@ const infuraApiKey = '9ce0aadbd2604b55b788845ee838be87';
 module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
   // to customize your Truffle configuration!
-  contracts_build_directory: "./client/src/contracts",
+  contracts_build_directory: "../front-end/src/contracts",
   networks: {
     development: {
       host: "127.0.0.1",

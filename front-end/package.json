@@ -1,6 +1,6 @@
 {
-  "name": "client",
-  "version": "0.1.0",
+  "name": "farm-front-end",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "react": "16.11.0",
