@@ -28,6 +28,4 @@ module.exports = async function(deployer, network, accounts) {
   await chickenToken.transfer(farm.address, amountOfTokensInBank);
   await cowToken.transfer(farm.address, amountOfTokensInBank);
   await goatToken.transfer(farm.address, amountOfTokensInBank);
-
-  await eurToken.transfer(user, amountOfEurosForUser, { from: owner });
 };
