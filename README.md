@@ -12,18 +12,13 @@ Based on [truffle react](https://www.trufflesuite.com/boxes/react) and [Blockcha
 4. Migrate contracts:
     - First time: `truffle migrate`
     - Other times: `truffle migrate --reset`
-5. Start truffle console: `truffle console`.
-6. Run smoke test:
+5. To test contracts in CLI, start truffle console: `truffle console`.
 
-``` javascript
-st = await SimpleStorage.deployed()
-result = await st.get()
-result.toString() // should print '0'
+---
 
-st.set(123)
-result = await st.get()
-result.toString() // should print '123'
-```
+## Contract sests
+
+1. Run `truffle test` to execute contract tests.
 
 ---
 
@@ -40,3 +35,5 @@ result.toString() // should print '123'
     - In MetaMask, `Import New Account` and paste the private key from step 1.
 5. Change directory: `cd client`
 6. Run: `npm run start`.
+
+---
